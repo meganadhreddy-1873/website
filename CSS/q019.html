@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inheritance, Specificity &amp; Cascade — CSS Practical 19</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+.parent{color:var(--teal);} .parent p{color:inherit;}
+#idwin{color:var(--accent)!important;} .classlose{color:red;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">MEGANADH<span>.LAB</span></div>
+  <nav class="crumb">
+    <a href="../index.html">Home</a>
+    <a href="index.html">CSS Programs</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">CSS Practical 019</span>
+  <h1 class="page-title">Inheritance, Specificity &amp; Cascade<span class="dot">.</span></h1>
+  <p class="desc">How CSS rules are resolved.</p>
+  <div class="panel">
+<div class="parent"><p>This text inherits color from its parent (.parent).</p></div><p id="idwin" class="classlose">ID + !important wins over the class rule here (specificity demo).</p>
+  </div>
+</main>
+<footer class="site">B. Meganadh Reddy · 250200531 · Sec 6</footer>
+</body>
+</html>

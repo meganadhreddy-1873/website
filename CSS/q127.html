@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI recommendation card — CSS Practical 127</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+.card{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:20px;transition:.2s;}
+.card:hover{border-color:var(--accent);transform:translateY(-3px);}
+.card h3{margin:.2em 0;}
+.card .stat{font-size:1.8em;font-weight:800;color:var(--accent);}
+.card .badge{font-size:.75em;background:rgba(45,212,191,.15);color:var(--teal);padding:3px 10px;border-radius:20px;}
+.avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--teal));
+  display:flex;align-items:center;justify-content:center;font-weight:800;color:#111;}
+
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">MEGANADH<span>.LAB</span></div>
+  <nav class="crumb">
+    <a href="../index.html">Home</a>
+    <a href="index.html">CSS Programs</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">CSS Practical 127</span>
+  <h1 class="page-title">AI recommendation card<span class="dot">.</span></h1>
+  <p class="desc">A CSS practical exploring: ai recommendation card.</p>
+  <div class="panel">
+
+    <div class="grid-cards">
+      <div class="card"><div class="avatar">JD</div><h3>Jane Doe</h3><p style="color:var(--muted)">Product Designer</p><span class="badge">Online</span></div>
+      <div class="card"><h3>Revenue</h3><div class="stat">$48.2k</div><p style="color:var(--muted)">+12% vs last month</p></div>
+      <div class="card"><h3>Pro Plan</h3><div class="stat">$29/mo</div><p style="color:var(--muted)">Unlimited projects, priority support</p></div>
+      <div class="card"><h3>New sign-up</h3><p style="color:var(--muted)">Alex just joined your workspace — 2m ago</p></div>
+    </div>
+
+  </div>
+</main>
+<footer class="site">B. Meganadh Reddy · 250200531 · Sec 6</footer>
+</body>
+</html>

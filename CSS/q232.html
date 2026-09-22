@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark-mode SaaS interface using CSS variables — CSS Practical 232</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+
+.tilt-card{background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;padding:24px;max-width:280px;
+  transition:transform .25s, box-shadow .25s;}
+.tilt-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 12px 30px rgba(0,0,0,.4);border-color:var(--accent);}
+.glass{background:rgba(255,255,255,.06);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);
+  border-radius:16px;padding:24px;max-width:280px;}
+.gradient-box{background:linear-gradient(135deg,var(--accent),var(--teal));border-radius:14px;padding:24px;color:#111;font-weight:800;max-width:280px;}
+
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">MEGANADH<span>.LAB</span></div>
+  <nav class="crumb">
+    <a href="../index.html">Home</a>
+    <a href="index.html">CSS Programs</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">CSS Practical 232</span>
+  <h1 class="page-title">Dark-mode SaaS interface using CSS variables<span class="dot">.</span></h1>
+  <p class="desc">A CSS practical exploring: dark-mode saas interface using css variables.</p>
+  <div class="panel">
+
+    <div class="tilt-card"><h3>Hover me</h3><p style="color:var(--muted)">Smooth lift + shadow transition.</p></div><br>
+    <div class="glass"><h3>Glassmorphism</h3><p>Frosted, translucent surface.</p></div><br>
+    <div class="gradient-box">Gradient surface for CTAs and highlights.</div>
+
+  </div>
+</main>
+<footer class="site">B. Meganadh Reddy · 250200531 · Sec 6</footer>
+</body>
+</html>

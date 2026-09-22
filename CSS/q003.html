@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descendant, Child, Adjacent &amp; General Sibling Selectors — CSS Practical 3</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+.combo p{color:var(--teal);}
+.combo > span{color:var(--accent);font-weight:bold;}
+h4 + p{border-left:3px solid var(--accent);padding-left:8px;}
+h4 ~ ul{opacity:.8;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">MEGANADH<span>.LAB</span></div>
+  <nav class="crumb">
+    <a href="../index.html">Home</a>
+    <a href="index.html">CSS Programs</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">CSS Practical 003</span>
+  <h1 class="page-title">Descendant, Child, Adjacent &amp; General Sibling Selectors<span class="dot">.</span></h1>
+  <p class="desc">Combinator selectors in action.</p>
+  <div class="panel">
+<div class="combo"><p>Descendant selector: any &lt;p&gt; inside .combo</p><span>Direct child &lt;span&gt;</span></div><h4>Heading</h4><p>Adjacent sibling right after the heading.</p><ul><li>General sibling item 1</li><li>item 2</li></ul>
+  </div>
+</main>
+<footer class="site">B. Meganadh Reddy · 250200531 · Sec 6</footer>
+</body>
+</html>

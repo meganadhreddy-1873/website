@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Role and permission management — CSS Practical 187</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+
+.settings-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--border);}
+.settings-row:last-child{border-bottom:none;}
+.switch{width:44px;height:24px;background:var(--panel);border:1px solid var(--border);border-radius:20px;position:relative;cursor:pointer;}
+.switch.on{background:var(--accent);}
+.switch::after{content:'';position:absolute;top:2px;left:2px;width:18px;height:18px;background:#fff;border-radius:50%;transition:.2s;}
+.switch.on::after{left:22px;background:#111;}
+table.audit{width:100%;border-collapse:collapse;}
+table.audit th,table.audit td{text-align:left;padding:10px;border-bottom:1px solid var(--border);font-size:.9em;}
+
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">MEGANADH<span>.LAB</span></div>
+  <nav class="crumb">
+    <a href="../index.html">Home</a>
+    <a href="index.html">CSS Programs</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">CSS Practical 187</span>
+  <h1 class="page-title">Role and permission management<span class="dot">.</span></h1>
+  <p class="desc">A CSS practical exploring: role and permission management.</p>
+  <div class="panel">
+
+    <div class="settings-row"><div><b>Two-factor authentication</b><div style="color:var(--muted)">Add an extra layer of security</div></div><div class="switch on"></div></div>
+    <div class="settings-row"><div><b>Email notifications</b><div style="color:var(--muted)">Product updates and tips</div></div><div class="switch"></div></div>
+    <div class="settings-row"><div><b>API access</b><div style="color:var(--muted)">Allow programmatic access</div></div><div class="switch on"></div></div>
+    <br>
+    <table class="audit"><tr><th>Action</th><th>User</th><th>Date</th></tr>
+    <tr><td>Login</td><td>jane@co.com</td><td>Sep 22</td></tr><tr><td>API key created</td><td>alex@co.com</td><td>Sep 21</td></tr></table>
+
+  </div>
+</main>
+<footer class="site">B. Meganadh Reddy · 250200531 · Sec 6</footer>
+</body>
+</html>

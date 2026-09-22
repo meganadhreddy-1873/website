@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dividers and section separators — CSS Practical 063</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+.btn{padding:10px 20px;border-radius:8px;font-weight:700;border:1px solid transparent;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
+.btn-primary{background:var(--accent);color:#111;}
+.btn-secondary{background:var(--panel);color:var(--text);border-color:var(--border);}
+.btn-outline{background:transparent;color:var(--accent);border-color:var(--accent);}
+.btn-danger{background:#e2432f;color:#fff;}
+.btn-icon{width:40px;height:40px;border-radius:50%;padding:0;justify-content:center;}
+.chip{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:4px 14px;font-size:.85em;}
+
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">MEGANADH<span>.LAB</span></div>
+  <nav class="crumb">
+    <a href="../index.html">Home</a>
+    <a href="index.html">CSS Programs</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">CSS Practical 063</span>
+  <h1 class="page-title">Dividers and section separators<span class="dot">.</span></h1>
+  <p class="desc">A CSS practical exploring: dividers and section separators.</p>
+  <div class="panel">
+
+    <div class="btn-row">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-outline">Outline</button>
+      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-primary btn-icon">+</button>
+      <span class="chip">Tag</span><span class="chip">Badge</span>
+    </div>
+
+  </div>
+</main>
+<footer class="site">B. Meganadh Reddy · 250200531 · Sec 6</footer>
+</body>
+</html>
