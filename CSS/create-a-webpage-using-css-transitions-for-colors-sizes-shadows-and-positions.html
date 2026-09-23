@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 31</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.transition-card{width:min(100%,420px);margin:auto;padding:30px;border-radius:18px;background:#10233a;border:1px solid #334155;transition:background .35s ease,transform .35s ease,box-shadow .35s ease,width .35s ease,color .35s ease}.transition-card:hover{background:#173c59;transform:translateY(-10px) scale(1.02);box-shadow:0 25px 50px rgba(34,211,238,.2);color:#22d3ee}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 31</div><h1>CSS Transitions</h1><p>Smooth transitions for color, size, shadow and position.</p></header>
+<section class="demo">
+<div class="transition-card"><h2>Hover me</h2><p>All changes transition smoothly.</p></div></section>
+</main>
+</body>
+</html>

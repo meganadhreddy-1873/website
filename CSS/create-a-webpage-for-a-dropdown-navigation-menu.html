@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 40</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.dropnav{display:flex;align-items:center;gap:8px;padding:12px;background:#0b1728;border:1px solid #334155;border-radius:14px}.dropnav>a,.dropnav button{padding:11px 14px;color:#cbd5e1;background:none;border:0;text-decoration:none;font:inherit;cursor:pointer;border-radius:9px}.dropnav>a:hover,.dropnav button:hover{background:#17304a;color:#fff}.drop{position:relative}.menu{display:none;position:absolute;top:48px;left:0;min-width:190px;padding:8px;background:#0b1728;border:1px solid #334155;border-radius:12px;box-shadow:0 18px 40px #0008}.menu a{display:block;padding:11px;color:#cbd5e1;text-decoration:none;border-radius:8px}.menu a:hover{background:#17304a}.drop:hover .menu,.drop:focus-within .menu{display:block}@media(max-width:600px){.dropnav{flex-wrap:wrap}}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 40</div><h1>Dropdown Navigation Menu</h1><p>Hover/focus dropdown navigation using CSS.</p></header>
+<section class="demo">
+<nav class="dropnav"><a href="#">Home</a><div class="drop"><button>Products ▾</button><div class="menu"><a href="#">Analytics</a><a href="#">Automation</a><a href="#">AI Tools</a></div></div><a href="#">Pricing</a><a href="#">Contact</a></nav></section>
+</main>
+</body>
+</html>

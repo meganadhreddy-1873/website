@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 22</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.stack{position:relative;height:260px}.layer{position:absolute;width:220px;height:150px;display:grid;place-items:center;border-radius:18px;border:2px solid white;font-weight:900}.one{left:40px;top:40px;background:#2563eb;z-index:1}.two{left:130px;top:70px;background:#7c3aed;z-index:2}.three{left:220px;top:100px;background:#db2777;z-index:3}@media(max-width:700px){.layer{width:160px}.two{left:90px}.three{left:140px}}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 22</div><h1>z-index & Stacking Order</h1><p>Positioned elements with different z-index values demonstrate stacking order.</p></header>
+<section class="demo">
+<div class="stack"><div class="layer one">z-index: 1</div><div class="layer two">z-index: 2</div><div class="layer three">z-index: 3</div></div></section>
+</main>
+</body>
+</html>
