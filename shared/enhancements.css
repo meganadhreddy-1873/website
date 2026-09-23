@@ -1,0 +1,73 @@
+#weblab-progress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#60a5fa,#22d3ee);z-index:99999;box-shadow:0 0 16px #22d3ee88;transition:width .08s linear}.weblab-tools{position:fixed;right:18px;bottom:18px;z-index:9990;display:flex;gap:8px;padding:8px;border:1px solid #94a3b82e;border-radius:16px;background:#040a14d1;backdrop-filter:blur(18px);box-shadow:0 18px 50px #00000059}.weblab-tools button{border:1px solid #94a3b82e;background:#ffffff0f;color:#eef6ff;border-radius:10px;padding:9px 11px;cursor:pointer;font-weight:800}.weblab-tools button:hover{border-color:#60a5fa8c;transform:translateY(-1px)}.weblab-search{position:fixed;inset:0;z-index:9998;display:none;background:#02070fb8;backdrop-filter:blur(12px);padding:8vh 20px}.weblab-search.open{display:block}.weblab-search-box{width:min(850px,100%);margin:auto;background:#071220f7;border:1px solid #60a5fa59;border-radius:24px;box-shadow:0 35px 100px #00000080;overflow:hidden}.weblab-search-head{display:flex;gap:10px;padding:18px;border-bottom:1px solid #94a3b82e}.weblab-search-head input{flex:1;background:#071321;color:#fff;border:1px solid #94a3b82e;border-radius:12px;padding:13px 15px;font-size:16px;outline:none}.weblab-search-results{max-height:65vh;overflow:auto;padding:10px}.weblab-result{display:block;padding:14px 15px;border-radius:13px;text-decoration:none;color:#eef6ff}.weblab-result:hover{background:#60a5fa14}.weblab-result strong{display:block}.weblab-result small{color:#9fb0c6}.weblab-empty{padding:28px;color:#9fb0c6;text-align:center}.weblab-kbd{font-size:11px;color:#a8b8cc;border:1px solid #94a3b82e;border-radius:7px;padding:3px 6px}.weblab-local-search{display:flex;gap:10px;align-items:center;margin:18px 0}.weblab-local-search input{flex:1;max-width:650px;background:#071321;color:#fff;border:1px solid #94a3b82e;border-radius:12px;padding:12px 14px;outline:none}.weblab-count{font-size:12px;color:#9fb0c6}.weblab-visited{font-size:10px;margin-left:auto;color:#7dd3fc;opacity:.8}body.weblab-light{background:#f3f7fb!important;color:#132238!important}body.weblab-light .card,body.weblab-light .panel,body.weblab-light .preview,body.weblab-light .question,body.weblab-light .demo{background:#fff!important;color:#132238!important}body.weblab-light p,body.weblab-light .muted{color:#52657c!important}body.weblab-light .topbar a{color:#23405f}body.weblab-light .weblab-tools{background:#fffffff2}@media(max-width:600px){.weblab-tools{right:10px;bottom:10px}.weblab-tools .label{display:none}.weblab-search{padding:4vh 10px}.weblab-search-box{border-radius:18px}}
+/* ===== ADVANCED WEBLAB UI LAYER ===== */
+.weblab-tools{border:1px solid rgba(148,163,184,.22);background:rgba(4,10,20,.82);box-shadow:0 20px 60px rgba(0,0,0,.38),0 0 35px rgba(96,165,250,.05)}
+.weblab-tools button{min-width:40px;height:40px;border-radius:12px;transition:.22s}.weblab-tools button:active{transform:scale(.94)}
+.weblab-search{background:rgba(1,5,13,.82)}
+.weblab-search-box{background:rgba(7,18,32,.96);border:1px solid rgba(96,165,250,.25);box-shadow:0 40px 120px rgba(0,0,0,.72)}
+.weblab-search-head input{background:#050d19;border-color:rgba(148,163,184,.20)}
+.weblab-result{border:1px solid transparent;margin:3px 0;transition:.18s}.weblab-result:hover{border-color:rgba(96,165,250,.16);transform:translateX(2px)}
+.weblab-local-search{padding:12px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}
+.weblab-local-search input{background:rgba(3,10,20,.8)}
+.weblab-count{padding:6px 10px;border-radius:999px;background:rgba(96,165,250,.07);border:1px solid rgba(96,165,250,.10)}
+body.weblab-light{--bg:#f4f7fb;--bg2:#eef3f9;--surface:#fff;--surface2:#f8fafc;--surface3:#edf3fa;--line:rgba(15,35,60,.12);--line2:rgba(15,35,60,.22);--text:#102038;--muted:#52657c;background:radial-gradient(700px 400px at 0 0,rgba(59,130,246,.10),transparent 60%),#f4f7fb!important}
+body.weblab-light:before{opacity:.25;background-image:linear-gradient(rgba(20,50,80,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(20,50,80,.045) 1px,transparent 1px)}
+body.weblab-light .top{background:rgba(255,255,255,.78);box-shadow:0 10px 35px rgba(20,50,80,.06)}
+body.weblab-light .links a{color:#49617c}body.weblab-light .links a:hover,body.weblab-light .links a.active{color:#102038;background:rgba(59,130,246,.07)}
+body.weblab-light h1{background:linear-gradient(110deg,#102038,#1d4ed8 55%,#0891b2);-webkit-background-clip:text;color:transparent}
+body.weblab-light .card,body.weblab-light .demo,body.weblab-light .question{background:linear-gradient(145deg,#fff,#f8fbff);box-shadow:0 20px 50px rgba(20,50,80,.08)}
+body.weblab-light .card p,body.weblab-light p{color:#52657c}body.weblab-light .card h2,body.weblab-light h2{color:#102038}
+body.weblab-light .input,body.weblab-light select,body.weblab-light textarea,body.weblab-light .output,body.weblab-light pre{background:#fff;color:#102038;border-color:rgba(15,35,60,.14)}
+body.weblab-light .output{box-shadow:inset 0 1px rgba(15,35,60,.04)}body.weblab-light pre{background:#f5f8fc;color:#19304d}
+body.weblab-light .item{background:rgba(255,255,255,.72);color:#102038}body.weblab-light .item span:last-child{color:#263f5c}
+body.weblab-light .stat{background:rgba(255,255,255,.85)}body.weblab-light .stat strong{background:linear-gradient(90deg,#102038,#0369a1);-webkit-background-clip:text}
+body.weblab-light .weblab-tools{background:rgba(255,255,255,.92);border-color:rgba(15,35,60,.12)}body.weblab-light .weblab-tools button{color:#17324f;background:#f4f8fc;border-color:rgba(15,35,60,.12)}
+body.weblab-light .weblab-search{background:rgba(232,239,247,.78)}body.weblab-light .weblab-search-box{background:#fff;border-color:rgba(15,35,60,.12)}body.weblab-light .weblab-search-head input{background:#f5f8fc;color:#102038}
+
+/* =========================================================
+   CSS EXPERIMENT COMPATIBILITY FIXES
+   Keeps the advanced WebLab chrome separate from the actual
+   CSS demonstrations inside .demo-shell.
+   ========================================================= */
+.demo-shell{position:relative;isolation:isolate;margin-top:22px}
+.demo-shell>h2{margin:0 0 14px;color:var(--text)}
+.demo-shell>.preview{position:relative;overflow:auto;border:1px solid var(--line);border-radius:22px;background:rgba(3,10,20,.42);padding:22px;box-shadow:inset 0 1px rgba(255,255,255,.035)}
+
+/* The shared .demo is for dashboard sections. CSS experiments use
+   .demo as their actual teaching canvas, so do not let the dashboard
+   chrome add padding, shadows, borders or gradients to it. */
+.demo-shell .demo{margin:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;position:relative;overflow:visible}
+.demo-shell .demo:before{display:none}
+.demo-shell .demo h2{margin:0}
+
+/* Prevent the fixed site toolbar/search layer from changing the
+   dimensions of practical controls. */
+.demo-shell input:not([type="checkbox"]):not([type="radio"]),
+.demo-shell select,
+.demo-shell textarea{max-width:100%}
+
+/* Make wide practical demonstrations scroll safely instead of
+   breaking the page horizontally. */
+.demo-shell .cols4,.demo-shell .cols3,.demo-shell .cols2,
+.demo-shell .pricing,.demo-shell .checkout{min-width:0}
+.demo-shell img,.demo-shell video,.demo-shell iframe{max-width:100%}
+.demo-shell pre{max-width:100%;overflow:auto}
+
+/* Mobile preview fixes */
+@media(max-width:760px){
+  .demo-shell>.preview{padding:14px;border-radius:17px}
+  .demo-shell .sidebar{grid-template-columns:1fr}
+  .demo-shell .pricing,.demo-shell .checkout{grid-template-columns:1fr}
+  .demo-shell .cols4,.demo-shell .cols3,.demo-shell .cols2{grid-template-columns:1fr}
+}
+
+/* CSS catalogue: keep the catalogue search/list styles from
+   leaking into the navigation and other site components. */
+.css-catalogue-search{display:block;width:100%;max-width:760px;margin:20px 0;padding:14px 16px;background:#071321;color:#fff;border:1px solid var(--line);border-radius:12px;outline:none}
+.css-catalogue-search:focus{border-color:rgba(96,165,250,.6);box-shadow:0 0 0 3px rgba(96,165,250,.08)}
+.css-catalogue-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding-left:28px}
+.css-catalogue-list li{padding:10px 6px}
+.css-catalogue-list a{color:#b9d5f4;text-decoration:none}
+.css-catalogue-list a:hover{color:#38bdf8}
+@media(max-width:760px){.css-catalogue-list{grid-template-columns:1fr}}
+/* Advanced media-demo components */
+.media-search{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 22px}.media-input{flex:1;min-width:220px;padding:13px 15px;border:1px solid var(--border,#35506f);border-radius:12px;background:var(--panel,#09182b);color:inherit;outline:none}.media-input:focus{border-color:#67d8ff;box-shadow:0 0 0 3px rgba(103,216,255,.12)}.media-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.media-card{padding:18px;border:1px solid var(--border,#29415f);border-radius:18px;background:rgba(10,23,40,.8);transition:transform .25s,border-color .25s,box-shadow .25s;overflow:hidden}.media-card:hover{transform:translateY(-5px);border-color:#67d8ff;box-shadow:0 18px 35px rgba(0,0,0,.2)}.media-card img,.media-card video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:14px}.media-card audio{width:100%;margin:10px 0 16px}.media-card h3{margin:8px 0 14px}.media-card .btn{display:inline-block;margin-top:4px}.media-icon{font-size:42px;display:block;margin-bottom:10px}.media-card[hidden]{display:none!important}
