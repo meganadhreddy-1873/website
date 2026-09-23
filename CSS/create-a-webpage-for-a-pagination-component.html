@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 45</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.pagination{display:flex;justify-content:center;align-items:center;gap:7px}.pagination a,.pagination span{min-width:42px;height:42px;padding:0 12px;display:grid;place-items:center;border-radius:10px;border:1px solid #334155;text-decoration:none;color:#cbd5e1;background:#0b1728}.pagination a:hover,.pagination .active{background:#22d3ee;color:#06111d;border-color:#22d3ee;font-weight:900}.pagination .disabled{opacity:.35;pointer-events:none}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 45</div><h1>Pagination Component</h1><p>A clean pagination control with active, disabled and navigation states.</p></header>
+<section class="demo">
+<nav class="pagination" aria-label="Pagination"><a class="disabled" href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><span>…</span><a href="#">10</a><a href="#">›</a></nav></section>
+</main>
+</body>
+</html>

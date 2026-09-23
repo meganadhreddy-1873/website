@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 10</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.box-model-wrap{background:#111827;padding:10px}.margin-box{margin:30px;background:#162b45;padding:1px}.border-box{border:8px solid #fbbf24;padding:1px}.padding-box{padding:28px;background:#172f4b}.content-box{padding:25px;text-align:center;background:#22d3ee;color:#06111d;font-weight:900}.box-model-wrap:after{content:"Outside → margin | border | padding | content";display:block;margin-top:18px;color:#9aaac0;text-align:center}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 10</div><h1>CSS Box Model</h1><p>Content, padding, border and margin.</p></header>
+<section class="demo">
+<div class="box-model-wrap"><div class="margin-box"><div class="border-box"><div class="padding-box"><div class="content-box">CONTENT</div></div></div></div></div></section>
+</main>
+</body>
+</html>

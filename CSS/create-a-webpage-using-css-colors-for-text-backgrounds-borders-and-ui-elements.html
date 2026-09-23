@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 4</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.colors{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.swatch,button{min-height:110px;display:grid;place-items:center;border-radius:14px;font-weight:800}.text{color:#fbbf24;background:#101a2b}.bg{background:rgb(29,78,121);color:white}.border{border:4px solid hsl(160 84% 39%)}button{border:1px solid rgb(96 165 250 / .5);background:linear-gradient(135deg,#8b5cf6,#22d3ee);color:white}@media(max-width:700px){.colors{grid-template-columns:1fr 1fr}}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 4</div><h1>CSS Colors</h1><p>Text, background, border and UI colors using named, hex, RGB, HSL and alpha values.</p></header>
+<section class="demo">
+<div class="colors"><div class="swatch text">Text color</div><div class="swatch bg">Background color</div><div class="swatch border">Border color</div><button>UI element</button></div></section>
+</main>
+</body>
+</html>

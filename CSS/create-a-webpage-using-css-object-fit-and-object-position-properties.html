@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 29</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.objects{display:grid;grid-template-columns:1fr 1fr;gap:18px}.objects figure{margin:0}.objects img{width:100%;height:260px;object-fit:cover;object-position:center;border-radius:16px;background:#111827}.objects img.contain{object-fit:contain;object-position:center}.objects figcaption{padding:10px;color:#9aaac0;text-align:center}@media(max-width:700px){.objects{grid-template-columns:1fr}}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 29</div><h1>object-fit & object-position</h1><p>Control how images fit inside fixed boxes.</p></header>
+<section class="demo">
+<div class="objects"><figure><img src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="500"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0" y1="0" x2="1" y2="1"%3E%3Cstop stop-color="%230ea5e9"/%3E%3Cstop offset="1" stop-color="%237c3aed"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="800" height="500" fill="url(%23g)"/%3E%3Ccircle cx="180" cy="150" r="90" fill="%2322d3ee" opacity=".45"/%3E%3Ccircle cx="620" cy="340" r="150" fill="%23f472b6" opacity=".35"/%3E%3Ctext x="400" y="265" fill="white" font-size="56" font-family="Arial" text-anchor="middle" font-weight="700"%3ECSS IMAGE%3C/text%3E%3C/svg%3E" alt="Landscape"><figcaption>object-fit: cover</figcaption></figure><figure><img class="contain" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="500"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0" y1="0" x2="1" y2="1"%3E%3Cstop stop-color="%230ea5e9"/%3E%3Cstop offset="1" stop-color="%237c3aed"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="800" height="500" fill="url(%23g)"/%3E%3Ccircle cx="180" cy="150" r="90" fill="%2322d3ee" opacity=".45"/%3E%3Ccircle cx="620" cy="340" r="150" fill="%23f472b6" opacity=".35"/%3E%3Ctext x="400" y="265" fill="white" font-size="56" font-family="Arial" text-anchor="middle" font-weight="700"%3ECSS IMAGE%3C/text%3E%3C/svg%3E" alt="Landscape"><figcaption>object-fit: contain</figcaption></figure></div></section>
+</main>
+</body>
+</html>

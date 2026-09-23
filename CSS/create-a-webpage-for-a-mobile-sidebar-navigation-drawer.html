@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 39</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.drawer-wrap{position:relative;min-height:380px;overflow:hidden}.drawer-wrap input{display:none}.open{display:inline-block;padding:12px 16px;background:#22d3ee;color:#06111d;border-radius:10px;font-weight:900;cursor:pointer}.overlay{position:fixed;inset:0;background:rgb(0 0 0 / .55);opacity:0;pointer-events:none;transition:.3s;z-index:20}.drawer{position:fixed;top:0;left:0;bottom:0;width:280px;padding:25px;background:#0b1728;border-right:1px solid #334155;transform:translateX(-105%);transition:.3s;z-index:21}.drawer a{display:block;padding:12px;color:#cbd5e1;text-decoration:none}.close{float:right;font-size:28px;cursor:pointer}.drawer-wrap input:checked~.drawer{transform:translateX(0)}.drawer-wrap input:checked~.overlay{opacity:1;pointer-events:auto}.drawer-content{margin-top:50px;padding:20px}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 39</div><h1>Mobile Sidebar Navigation Drawer</h1><p>A CSS-only mobile drawer using a checkbox toggle.</p></header>
+<section class="demo">
+<div class="drawer-wrap"><input id="drawer" type="checkbox"><label for="drawer" class="open">☰ Open Menu</label><label for="drawer" class="overlay"></label><aside class="drawer"><label for="drawer" class="close">×</label><h2>NEXA</h2><a href="#">Dashboard</a><a href="#">Projects</a><a href="#">Profile</a><a href="#">Settings</a></aside><div class="drawer-content"><h2>Page content</h2><p>Open the drawer to see the mobile navigation.</p></div></div></section>
+</main>
+</body>
+</html>
