@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Question 21</title>
+<link rel="stylesheet" href="../shared/style.css">
+
+<style>
+.demo-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.demo-header{margin-bottom:24px}
+.demo-header h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+.demo-header p{margin:0;color:var(--muted);line-height:1.7}
+.demo{padding:24px;background:rgba(13,22,41,.82);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px;font-weight:700}
+.code-note{margin-top:16px;padding:12px 14px;border-left:3px solid var(--primary);background:rgba(96,165,250,.08);color:#cfe4ff;border-radius:8px;line-height:1.6}
+.demo button,.demo a.btn{font:inherit;cursor:pointer}
+@media(max-width:700px){.demo{padding:16px}}
+</style>
+.position-stage{position:relative;height:430px;overflow:auto;border:1px solid #334155;border-radius:16px;padding:18px}.static{position:static;padding:12px;background:#172f4b}.relative{position:relative;left:20px;padding:12px;background:#243b53}.relative span{position:relative;left:10px;color:#22d3ee}.absolute{position:absolute;right:20px;top:20px;padding:12px;background:#7c3aed;border-radius:8px}.sticky{position:sticky;top:0;padding:12px;background:#22d3ee;color:#06111d;font-weight:900}.scroll-content{padding:25px}.fixed-label{position:fixed;right:20px;bottom:20px;padding:10px 14px;border-radius:999px;background:#fbbf24;color:#111;font-weight:900;z-index:5}
+</head>
+<body>
+<main class="demo-wrap">
+<header class="demo-header"><div class="pill">CSS PRACTICAL · QUESTION 21</div><h1>CSS Positioning</h1><p>Static, relative, absolute, fixed and sticky positioning.</p></header>
+<section class="demo">
+<div class="position-stage"><div class="static">static</div><div class="relative">relative <span>offset</span></div><div class="absolute">absolute</div><div class="sticky">sticky (inside scroll area)</div><div class="scroll-content">Scroll area<br><br>Content<br><br>Content<br><br>Content<br><br>Content</div></div><div class="fixed-label">fixed</div></section>
+</main>
+</body>
+</html>
